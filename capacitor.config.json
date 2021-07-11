@@ -1,0 +1,6 @@
+{
+	"appId": "io.ionic.starter",
+	"appName": "yoriork-lab",
+	"webDir": "build",
+	"bundledWebRuntime": false
+}

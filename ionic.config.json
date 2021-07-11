@@ -1,0 +1,7 @@
+{
+  "name": "yoriork-lab",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}
