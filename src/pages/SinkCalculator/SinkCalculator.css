@@ -1,0 +1,65 @@
+.sinkCalculatorContainer {
+  position: relative;
+}
+
+.sinkCalculatorCounter {
+  position: sticky;
+  background-color: var(--ion-background-color);
+  z-index: 2;
+  top: 0;
+  font-size: 1.5rem;
+  height: 4rem;
+  line-height: 4rem;
+  text-align: center;
+  border-bottom: 1px solid transparent;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sinkCalculatorCounter > span {
+  margin-right: 0.5rem;
+}
+
+.sinkCalculatorItem {
+  min-height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.sinkCalculatorItemSlot {
+  margin-right: 0.25rem;
+  display: flex;
+}
+
+.sinkCalculatorItemImage {
+  max-height: 2.75rem;
+}
+
+.sinkCalculatorItemImageContainer,
+.sinkCalculatorItemIconContainer {
+  text-align: center;
+}
+
+.sinkCalculatorItemMiddleSlot {
+  margin: 0 0.5rem;
+  min-width: 6rem;
+  justify-content: center;
+}
+
+.sinkCalculatorItemRuneDescription {
+  font-size: 0.75rem;
+  text-align: center;
+}
+
+.backwards > ion-icon {
+  transform: rotateY(180deg);
+}
+
+.sinkCalculatorItemIconContainer {
+  height: 3rem;
+  display: flex;
+  align-items: center;
+}
