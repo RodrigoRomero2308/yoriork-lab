@@ -23,22 +23,24 @@ import "@ionic/react/css/display.css";
 import "./theme/variables.css";
 import { SinkCalculator } from "./pages/SinkCalculator/SinkCalculator";
 
-const App: React.FC = () => (
-  <IonApp>
-    <IonReactRouter>
-      <IonRouterOutlet>
-        <Route exact path="/home">
-          <Home />
-        </Route>
-        <Route exact path="/sinkCalculator">
-          <SinkCalculator />
-        </Route>
-        <Route>
-          <Redirect to="/home" />
-        </Route>
-      </IonRouterOutlet>
-    </IonReactRouter>
-  </IonApp>
-);
+const App: React.FC = () => {
+  return (
+    <IonApp>
+      <IonReactRouter>
+        <IonRouterOutlet>
+          <Route exact path="/home">
+            <Home />
+          </Route>
+          <Route exact path="/sinkCalculator">
+            <SinkCalculator />
+          </Route>
+          <Route>
+            <Redirect to="/home" />
+          </Route>
+        </IonRouterOutlet>
+      </IonReactRouter>
+    </IonApp>
+  );
+};
 
 export default App;

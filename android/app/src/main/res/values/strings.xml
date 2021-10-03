@@ -2,6 +2,6 @@
 <resources>
     <string name="app_name">Yoriork\'s Lab</string>
     <string name="title_activity_main">Yoriork\'s Lab</string>
-    <string name="package_name">io.ionic.starter</string>
-    <string name="custom_url_scheme">io.ionic.starter</string>
+    <string name="package_name">com.rr.yoriork.lab</string>
+    <string name="custom_url_scheme">com.rr.yoriork.lab</string>
 </resources>

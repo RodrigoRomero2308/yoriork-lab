@@ -1,4 +1,4 @@
-package io.ionic.starter;
+package com.rr.yoriork.lab;
 
 import com.getcapacitor.BridgeActivity;
 

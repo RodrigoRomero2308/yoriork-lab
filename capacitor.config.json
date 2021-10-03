@@ -2,5 +2,10 @@
   "appId": "com.rr.yoriork.lab",
   "appName": "Yoriork's Lab",
   "webDir": "build",
-  "bundledWebRuntime": false
+  "bundledWebRuntime": false,
+  "plugins": {
+    "PushNotifications": {
+      "presentationOptions": ["badge", "sound", "alert"]
+    }
+  }
 }
