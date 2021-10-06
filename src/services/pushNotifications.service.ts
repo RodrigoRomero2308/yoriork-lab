@@ -1,14 +1,21 @@
 import { PushNotifications } from "@capacitor/push-notifications";
 
 export const initPushNotifications = () => {
-  PushNotifications.requestPermissions();
+  PushNotifications.requestPermissions().then((result) => {
+    if (result.receive === "granted") {
+      // Register with Apple / Google to receive push via APNS/FCM
+      PushNotifications.register();
+    } else {
+      // Show some error
+    }
+  });
 
   PushNotifications.addListener("registration", (token) => {
-    alert("Registration successful");
+    alert("Registration successful, token: " + token.value);
   });
 
   PushNotifications.addListener("registrationError", (err) => {
-    alert(`Push notification failed with an error: ${err}`);
+    alert(`Push notification failed with an error: ${JSON.stringify(err)}`);
   });
 
   PushNotifications.addListener("pushNotificationReceived", (notification) => {
