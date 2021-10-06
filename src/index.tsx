@@ -4,8 +4,11 @@ import App from "./App";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import reportWebVitals from "./reportWebVitals";
 import { initPushNotifications } from "./services/pushNotifications.service";
+import { isPlatform } from "@ionic/react";
 
-initPushNotifications();
+if (isPlatform("mobile") && isPlatform("capacitor")) {
+  initPushNotifications();
+}
 
 ReactDOM.render(
   <React.StrictMode>
