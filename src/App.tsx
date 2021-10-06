@@ -22,13 +22,8 @@ import "@ionic/react/css/display.css";
 /* Theme variables */
 import "./theme/variables.css";
 import { SinkCalculator } from "./pages/SinkCalculator/SinkCalculator";
-import { initPushNotifications } from "./services/pushNotifications.service";
-import { useEffect } from "react";
 
 const App: React.FC = () => {
-  useEffect(() => {
-    initPushNotifications();
-  }, []);
   return (
     <IonApp>
       <IonReactRouter>
